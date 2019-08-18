@@ -1,0 +1,29 @@
+#阿里云
+oss:
+  accessKeyId: LTAI1UlW1KNYuc8L
+  accessKeySecret: 4Q91ZX3nSy3vxxKKSzzvafgY5kSGBa
+  bucket:
+    test:
+      name: letian-fun
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://letian-fun.oss-cn-hangzhou.aliyuncs.com/
+    image:
+      name: fqkj-image
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://fqkj-image.oss-cn-hangzhou.aliyuncs.com/
+    video:
+      name: fqkj-video
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://fqkj-video.oss-cn-hangzhou.aliyuncs.com/
+    vr:
+      name: fqkj-vr
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://fqkj-vr.oss-cn-hangzhou.aliyuncs.com/
+    recording:
+      name: fqkj-recording
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://fqkj-recording.oss-cn-hangzhou.aliyuncs.com/
+    attachment:
+      name: fqkj-attachment
+      endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      domain: http://fqkj-attachment.oss-cn-hangzhou.aliyuncs.com/
