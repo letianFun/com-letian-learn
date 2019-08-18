@@ -1,10 +1,7 @@
 package com.letian.learn.util.date;
 
 /**
- * @author Liu Zhen
- * @version 2.0.0
- * @program hshb-erp-server
- * @description 星期枚举  用于把星期的小写转换为大写
+ *  星期枚举  用于把星期的小写转换为大写
  * @date 2019-06-23 10:50
  */
 public enum WeekEnum {
