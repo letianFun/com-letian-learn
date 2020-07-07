@@ -1,6 +1,7 @@
 package com.letian.learn.util.string;
 
-import org.apache.commons.lang3.StringUtils;
+
+import cn.hutool.core.util.StrUtil;
 
 /**
  * @author :   lh
@@ -8,6 +9,10 @@ import org.apache.commons.lang3.StringUtils;
  * @version : 1.0.0
  */
 public class StringUtil {
+
+//    public static void main(String[] args) {
+//        System.err.println(underlineToHump("house.user_name"));
+//    }
 
     /** 下划线转驼峰
      *       user_name  ---->  userName
@@ -17,13 +22,13 @@ public class StringUtil {
      * @return 驼峰字符串
      */
     public static String underlineToHump(String underlineName) {
-        if (StringUtils.isBlank(underlineName)) {
+        if (StrUtil.isBlank(underlineName)) {
             return null;
         }
         //截取字符串.以后的字符串
         int index = underlineName.indexOf(".");
         if (index != -1) {
-            underlineName = StringUtils.substring(underlineName, index + 1);
+            underlineName = StrUtil.subSuf(underlineName,index + 1);
         }
         //截取下划线分成数组
         char[] charArray = underlineName.toCharArray();
@@ -52,7 +57,7 @@ public class StringUtil {
      * @return  带下滑线的String
      */
     public static String humpToUnderline(String humpName) {
-        if (StringUtils.isBlank(humpName)) {
+        if (StrUtil.isBlank(humpName)) {
             return null;
         }
         //截取下划线分成数组，

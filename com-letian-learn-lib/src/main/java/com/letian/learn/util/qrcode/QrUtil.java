@@ -22,38 +22,38 @@ import java.util.Map;
 public class QrUtil {
     private static Logger logger = LoggerFactory.getLogger(QrUtil.class);
 
-    /**
-     * @param args
-     * @throws IOException
-     * @throws WriterException
-     */
-    public static void main(String[] args) throws WriterException, IOException {
-        String filePath = "D://temp//qr//";
-        String fileName = "zxing1.png";
-        JSONObject json = new JSONObject();
-        json.put("zxing", "https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing");
-        json.put("author", "shihy");
-        String content = json.toJSONString();// 内容   
-        content = "http://www.sssyin.cn/online/pay/?id=952010565811";
-        int width = 200; // 图像宽度  
-        int height = 200; // 图像高度  
-        String format = "png";// 图像类型  
-        QrDTO qrDTO = new QrDTO();
-        qrDTO.setFileName(fileName);
-        qrDTO.setContent(content);
-        qrDTO.setFilePath(filePath);
-        qrDTO.setHeight(height);
-        qrDTO.setFormat(format);
-        qrDTO.setWidth(width);
-        createImage(qrDTO);
-        String contentResult = analysisImage(filePath + fileName);
-        JSONObject contentJson = JSONObject.parseObject(contentResult);
-        logger.info("图片中内容：  ");
-        logger.info("author： " + contentJson.getString("author"));
-        logger.info("zxing：  " + contentJson.getString("zxing"));
-        logger.info("图片中格式：  ");
-        //logger.info("encode： " + result.getBarcodeFormat());
-    }
+//    /**
+//     * @param args
+//     * @throws IOException
+//     * @throws WriterException
+//     */
+//    public static void main(String[] args) throws WriterException, IOException {
+//        String filePath = "D://temp//qr//";
+//        String fileName = "zxing1.png";
+//        JSONObject json = new JSONObject();
+//        json.put("zxing", "https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing");
+//        json.put("author", "shihy");
+//        String content = json.toJSONString();// 内容
+//        content = "http://www.sssyin.cn/online/pay/?id=952010565811";
+//        int width = 200; // 图像宽度
+//        int height = 200; // 图像高度
+//        String format = "png";// 图像类型
+//        QrDTO qrDTO = new QrDTO();
+//        qrDTO.setFileName(fileName);
+//        qrDTO.setContent(content);
+//        qrDTO.setFilePath(filePath);
+//        qrDTO.setHeight(height);
+//        qrDTO.setFormat(format);
+//        qrDTO.setWidth(width);
+//        createImage(qrDTO);
+//        String contentResult = analysisImage(filePath + fileName);
+//        JSONObject contentJson = JSONObject.parseObject(contentResult);
+//        logger.info("图片中内容：  ");
+//        logger.info("author： " + contentJson.getString("author"));
+//        logger.info("zxing：  " + contentJson.getString("zxing"));
+//        logger.info("图片中格式：  ");
+//        //logger.info("encode： " + result.getBarcodeFormat());
+//    }
 
     /**
      * 生成图像

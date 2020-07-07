@@ -1,13 +1,13 @@
 package com.letian.learn.util.language;
 
 
+import cn.hutool.core.util.StrUtil;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
-import org.apache.commons.lang3.StringUtils;
 
 /**
 * @date 2019/8/18
@@ -59,7 +59,7 @@ public class HanYuPinYinHelper {
 
 
     public static String getFirstLetters(String ChineseLanguage, HanyuPinyinCaseType caseType) {
-        if (StringUtils.isEmpty(ChineseLanguage)){
+        if (StrUtil.isEmpty(ChineseLanguage)){
             return "";
         }
         char[] cl_chars = ChineseLanguage.trim().toCharArray();

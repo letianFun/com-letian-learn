@@ -13,6 +13,7 @@ target
 */.project
 .project
 .settings
+.idea/
 /.idea
 *.iml
 /.metadata/
