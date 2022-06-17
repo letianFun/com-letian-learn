@@ -30,7 +30,7 @@
         <lombok.version>1.18.4</lombok.version>
         <hutool.version>5.3.6</hutool.version>
         <!--aliJSON工具-->
-        <fastjson.version>1.2.30</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <!--发送邮件-->
         <mail.version>1.6.1</mail.version>
         <!--Google处理二维码-->
